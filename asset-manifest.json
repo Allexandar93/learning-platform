@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/learning-platform/static/css/main.08fe4cb4.css",
+    "main.js": "/learning-platform/static/js/main.72055ded.js",
+    "static/media/off.png": "/learning-platform/static/media/off.0a1241dad222cde50525.png",
+    "static/media/on.png": "/learning-platform/static/media/on.d1b8502149491d481faf.png",
+    "index.html": "/learning-platform/index.html",
+    "main.08fe4cb4.css.map": "/learning-platform/static/css/main.08fe4cb4.css.map",
+    "main.72055ded.js.map": "/learning-platform/static/js/main.72055ded.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08fe4cb4.css",
+    "static/js/main.72055ded.js"
+  ]
+}
