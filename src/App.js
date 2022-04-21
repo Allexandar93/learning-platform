@@ -6,11 +6,10 @@ import Student from "./components/Student";
 import "./App.css";
 
 function App() {
-  const [username, setUsername] = useState("");
   return (
     <Routes>
       <Route path="/" element={<Welcome />} />
-      <Route path="/login" element={<Login username={username} />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/student" element={<Student />} />
     </Routes>
   );
