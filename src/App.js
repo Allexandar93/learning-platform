@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router";
-import { useState } from "react";
 import Welcome from "./components/Welcome";
 import Login from "./components/Login";
 import Student from "./components/Student";

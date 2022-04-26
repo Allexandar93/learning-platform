@@ -1,0 +1,19 @@
+.navbar {
+  box-sizing: border-box;
+  background-color: #ffc996;
+  width: 100vw;
+  height: 50px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+
+  .navbar_left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
+}

@@ -1,16 +1,9 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import "../styles/login.scss";
+import useUsername from "./useUsername";
 
 const Login = () => {
-  let history = useNavigate();
-  const [username, setUsername] = useState("");
-
-  const onSubmit = () => {
-    if (username) {
-      history("/student");
-    }
-  };
+  const { username, setUsername, onSubmit, isActive } = useUsername();
 
   const updateUsername = (e) => {
     setUsername(e.target.value);
@@ -66,6 +59,13 @@ const Login = () => {
         <button className="login_leftBtn" onClick={onSubmit}>
           LOGIN
         </button>
+        <div
+          className={
+            isActive ? "login_leftNoEnter" : "login_leftNoEnter noDisplay"
+          }
+        >
+          <p>Please enter a username</p>
+        </div>
       </div>
 
       <div className="login_right">
