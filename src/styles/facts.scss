@@ -1,4 +1,45 @@
 .facts {
   height: calc(100vh - 50px);
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .facts_container {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+
+    .facts_paragraph {
+      font-family: "Roboto", sans-serif;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .facts_api {
+      font-family: "Bebas Neue", cursive;
+      font-size: clamp(2.5rem, 4vw, 8rem);
+      animation: pulsing 6s infinite linear;
+    }
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

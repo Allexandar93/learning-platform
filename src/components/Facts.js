@@ -9,7 +9,7 @@ const Facts = () => {
     getFact();
     const interval = setInterval(() => {
       getFact();
-    }, 2000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);
@@ -24,8 +24,10 @@ const Facts = () => {
 
   return (
     <div className="facts">
-      <h1>{fact}</h1>
-      <button onClick={getFact}>Click</button>
+      <div className="facts_container">
+        <p className="facts_paragraph">Did you know?</p>
+        <p className="facts_api">{fact}</p>
+      </div>
     </div>
   );
 };
