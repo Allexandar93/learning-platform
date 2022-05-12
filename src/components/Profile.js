@@ -23,6 +23,18 @@ const Profile = () => {
           <p className="profile_coverInfo">San Francisco, CA, United States</p>
         </div>
       </div>
+
+      <div className="profile_info">
+        <h3 className="profile_infoAbout">ABOUT</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eos
+          nisi molestias. Quos aliquam modi aliquid magni tempora temporibus
+          explicabo sint nostrum excepturi nam ea, veritatis delectus enim minus
+          debitis facilis illo asperiores. Optio sequi deleniti, hic sapiente,
+          qui maxime nulla, nam quisquam provident aliquid molestiae tempora
+          velit excepturi labore.
+        </p>
+      </div>
     </div>
   );
 };
