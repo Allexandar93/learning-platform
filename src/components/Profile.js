@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { profileData } from "../data/profileData";
 import "../styles/profile.scss";
+import ProfileCards from "./ProfileCards";
 
 const Profile = () => {
   const [name, setName] = useState();
@@ -34,6 +36,16 @@ const Profile = () => {
           qui maxime nulla, nam quisquam provident aliquid molestiae tempora
           velit excepturi labore.
         </p>
+      </div>
+
+      <div className="profile_impressions">
+        {profileData.map((item) => (
+          <ProfileCards
+            img={item.img}
+            content={item.content}
+            date={item.date}
+          />
+        ))}
       </div>
     </div>
   );

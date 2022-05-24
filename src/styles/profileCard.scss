@@ -1,0 +1,22 @@
+.profileCard {
+  width: 70%;
+  min-width: 450px;
+  height: 200px;
+  display: flex;
+  margin-bottom: 20px;
+
+  .profileCard_img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .profileCard_content {
+    width: 70%;
+  }
+}
