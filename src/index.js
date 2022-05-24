@@ -6,7 +6,7 @@ import { BrowserRouter, HashRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter basename="/learning-platform">
+    <HashRouter>
       <App />
     </HashRouter>
   </React.StrictMode>,
