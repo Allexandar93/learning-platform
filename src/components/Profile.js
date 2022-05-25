@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { profileData } from "../data/profileData";
 import "../styles/profile.scss";
 import ProfileCards from "./ProfileCards";
+import Footer from "./Footer";
 
 const Profile = () => {
   const [name, setName] = useState();
@@ -44,9 +45,11 @@ const Profile = () => {
             img={item.img}
             content={item.content}
             date={item.date}
+            name={item.name}
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

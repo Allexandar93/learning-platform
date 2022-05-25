@@ -69,3 +69,31 @@
     flex-direction: column;
   }
 }
+@media only screen and(max-width: 480px) {
+  .profile {
+    .profile_cover {
+      flex-direction: column;
+      padding: 0;
+
+      .profile_coverImg {
+        width: 150px;
+        height: 150px;
+        margin: 20px 0;
+      }
+
+      .profile_coverInfo {
+        text-align: center;
+      }
+    }
+    .profile_info {
+      width: 90%;
+      min-width: 200px;
+      margin: 30px auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.4);
+    }
+  }
+}

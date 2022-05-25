@@ -8,15 +8,50 @@
   .profileCard_img {
     width: 30%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     img {
       width: 100px;
       height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
     }
   }
 
   .profileCard_content {
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p:nth-child(1) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and(max-width: 480px) {
+  .profileCard {
+    width: 70%;
+    min-width: none;
+    height: auto;
+    margin: 40px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .profileCard_img {
+      margin-bottom: 20px;
+      img {
+        margin-bottom: 5px;
+      }
+    }
+
+    .profileCard_content {
+      p:nth-child(1) {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
