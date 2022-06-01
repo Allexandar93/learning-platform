@@ -5,6 +5,7 @@ import Profile from "./Profile";
 import "../styles/navbar.scss";
 
 import { Route, Routes, Outlet } from "react-router-dom";
+import Footer from "./Footer";
 
 const Student = () => {
   return (
@@ -15,6 +16,7 @@ const Student = () => {
         <Route path="/" element={<Facts />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
