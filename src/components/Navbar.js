@@ -16,11 +16,14 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar_left">
-        <img src={icon} />
+        <Link to={"/student"}>
+          <img src={icon} />
+        </Link>
+
         <p className="navbar_leftWelcome">Hello {name}</p>
       </div>
       <div className="navbar_right">
-        <p>Tests</p>
+        <Link to={"/student/quiz"}>Quiz</Link>
         <Link to={"/student/profile"}>Profile</Link>
       </div>
     </div>

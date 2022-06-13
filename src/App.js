@@ -4,6 +4,8 @@ import Login from "./components/Login";
 import Student from "./components/Student";
 import Profile from "./components/Profile";
 import "./App.css";
+import Quiz from "./components/Quiz";
+import QuizTest from "./components/QuizTest";
 
 function App() {
   return (
@@ -11,6 +13,9 @@ function App() {
       <Route path="/" element={<Welcome />} />
       <Route path="/login" element={<Login />} />
       <Route path="/student" element={<Student />}>
+        <Route path="/student/quiz" element={<Quiz />}>
+          <Route path="/student/quiz/test" element={<QuizTest />} />
+        </Route>
         <Route path="/student/profile" element={<Profile />} />
       </Route>
     </Routes>

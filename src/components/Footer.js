@@ -10,10 +10,10 @@ const Footer = () => {
           <p>&copy; Copyright 2022 Learning Platform</p>
         </div>
         <div className="footer_contactRight">
-          <i class="fa-brands fa-facebook-square"></i>
-          <i class="fa-brands fa-instagram-square"></i>
-          <i class="fa-brands fa-twitter-square"></i>
-          <i class="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-facebook-square"></i>
+          <i className="fa-brands fa-instagram-square"></i>
+          <i className="fa-brands fa-twitter-square"></i>
+          <i className="fa-brands fa-linkedin"></i>
         </div>
       </div>
     </div>
