@@ -17,14 +17,31 @@ const QuizHome = ({ fetchQuestions }) => {
     <div className="quizHome">
       <img src={quizImg} alt="" />
 
-      <p>Choose category</p>
-      <select onChange={(e) => setCategory(e.target.value)}>
+      {/* <p>Choose category</p> */}
+      {/* <select
+        className="quizHome_select"
+        onChange={(e) => setCategory(e.target.value)}
+      >
         {Categories.map((option) => (
           <option key={option.category} value={option.value}>
             {option.category}
           </option>
         ))}
-      </select>
+      </select> */}
+
+      <div className="dropdown">
+        <select
+          className="dropdown-select"
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option>Choose Category</option>
+          {Categories.map((option) => (
+            <option key={option.category} value={option.value}>
+              {option.category}
+            </option>
+          ))}
+        </select>
+      </div>
 
       <button onClick={handleSubmit}>Start Quiz</button>
     </div>
