@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router";
 import QuizHome from "./QuizHome";
 import QuizTest from "./QuizTest";
 import "../styles/quiz.scss";
+import QuizResults from "./QuizResults";
 
 const Quiz = () => {
   const [questions, setQuestions] = useState();
@@ -44,6 +45,10 @@ const Quiz = () => {
               setQuestions={setQuestions}
             />
           }
+        />
+        <Route
+          path="/result"
+          element={<QuizResults name={name} score={score} />}
         />
       </Routes>
     </div>

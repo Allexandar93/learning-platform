@@ -14,10 +14,7 @@ const useUsername = () => {
     }
   };
 
-  useEffect(() => {
-    // storing input name
-    localStorage.setItem("name", JSON.stringify(username));
-  }, [username]);
+  localStorage.setItem("name", JSON.stringify(username));
 
   return { username, setUsername, onSubmit, isActive };
 };
