@@ -52,7 +52,11 @@ const Questions = ({
       <h1> Question {currentQuestion + 1}</h1>
 
       <div className="questions_singleQuestion">
-        <h2>{questions[currentQuestion].question}</h2>
+        <h2
+          dangerouslySetInnerHTML={{
+            __html: questions[currentQuestion].question,
+          }}
+        ></h2>
 
         <div className="questions_singleQuestionOptions">
           {error && <ErrorMessage>{error}</ErrorMessage>}
