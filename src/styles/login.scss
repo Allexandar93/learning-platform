@@ -52,7 +52,7 @@
         padding: 0 10px;
         border: none;
         border-radius: 15px;
-        background-color: #fdebdb;
+        background-color: #cceee0;
 
         &:focus {
           outline: none;
@@ -64,7 +64,7 @@
       height: 40px;
       width: 100%;
       max-width: 150px;
-      background-color: #583d72;
+      background-color: #6cc4a1;
       color: #ffffff;
       border: none;
       border-radius: 15px;
@@ -76,7 +76,7 @@
     }
 
     .login_leftNoEnter {
-      background-color: #583d72;
+      background-color: #6cc4a1;
       height: 70px;
       width: 80%;
       max-width: 450px;
@@ -90,7 +90,7 @@
       p {
         font-family: "Roboto", sans-serif;
         font-size: clamp(1rem, 1.8vw, 2rem);
-        color: #fff;
+        color: rgb(0, 0, 0);
       }
     }
   }
@@ -98,7 +98,7 @@
   .login_right {
     width: 40vw;
     padding: 0 20px;
-    background-color: #ffc996;
+    background-color: #4cacbc;
     text-align: center;
     display: flex;
     flex-direction: column;

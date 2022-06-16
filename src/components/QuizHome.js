@@ -16,25 +16,13 @@ const QuizHome = ({ fetchQuestions }) => {
   return (
     <div className="quizHome">
       <img src={quizImg} alt="" />
-
-      {/* <p>Choose category</p> */}
-      {/* <select
-        className="quizHome_select"
-        onChange={(e) => setCategory(e.target.value)}
-      >
-        {Categories.map((option) => (
-          <option key={option.category} value={option.value}>
-            {option.category}
-          </option>
-        ))}
-      </select> */}
+      <p>Choose category</p>
 
       <div className="dropdown">
         <select
           className="dropdown-select"
           onChange={(e) => setCategory(e.target.value)}
         >
-          <option>Choose Category</option>
           {Categories.map((option) => (
             <option key={option.category} value={option.value}>
               {option.category}
@@ -43,7 +31,9 @@ const QuizHome = ({ fetchQuestions }) => {
         </select>
       </div>
 
-      <button onClick={handleSubmit}>Start Quiz</button>
+      <button onClick={handleSubmit} className="quizHome_btn">
+        Start Quiz
+      </button>
     </div>
   );
 };

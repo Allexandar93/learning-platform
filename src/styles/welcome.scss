@@ -3,8 +3,8 @@
 .welcome {
   height: 100vh;
   width: 100vw;
-  background-color: #ffc996;
-  color: #583d72;
+  background-color: #f6e3c5;
+  color: #4cacbc;
   font-size: 5rem;
   font-family: "Bebas Neue", cursive;
   display: flex;
@@ -36,10 +36,15 @@
     margin-top: 60px;
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
-    text-shadow: 2px 2px 5px #000000;
+
     z-index: 99;
     position: absolute;
     bottom: 5%;
+
+    .welcome_loginbtn {
+      color: #4cacbc;
+      transition: 0.3s ease;
+    }
 
     .welcome_loginbtn:hover {
       color: #ffffff;
