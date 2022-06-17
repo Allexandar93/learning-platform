@@ -49,7 +49,10 @@ const Questions = ({
 
   return (
     <div className="questions">
-      <h1> Question {currentQuestion + 1}</h1>
+      <p className="questions_questionNumber">
+        {" "}
+        Question {currentQuestion + 1} / 10
+      </p>
 
       <div className="questions_singleQuestion">
         <h2
@@ -58,8 +61,8 @@ const Questions = ({
           }}
         ></h2>
 
+        {error && <ErrorMessage>{error}</ErrorMessage>}
         <div className="questions_singleQuestionOptions">
-          {error && <ErrorMessage>{error}</ErrorMessage>}
           {options &&
             options.map((i) => (
               <button
@@ -74,11 +77,11 @@ const Questions = ({
               </button>
             ))}
         </div>
+      </div>
 
-        <div className="questions_buttons">
-          <button onClick={handleQuit}>Quit</button>
-          <button onClick={handleNext}>Next Question</button>
-        </div>
+      <div className="questions_buttons">
+        <button onClick={handleQuit}>Quit</button>
+        <button onClick={handleNext}>Next Question</button>
       </div>
     </div>
   );
