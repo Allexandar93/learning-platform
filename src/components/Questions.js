@@ -80,8 +80,12 @@ const Questions = ({
       </div>
 
       <div className="questions_buttons">
-        <button onClick={handleQuit}>Quit</button>
-        <button onClick={handleNext}>Next Question</button>
+        <button className="quitBtn hover" onClick={handleQuit}>
+          Quit
+        </button>
+        <button className="nextBtn hover" onClick={handleNext}>
+          Next Question
+        </button>
       </div>
     </div>
   );

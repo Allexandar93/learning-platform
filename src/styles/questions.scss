@@ -1,5 +1,4 @@
 .questions {
-  background-color: burlywood;
   width: 80%;
   min-height: 60vh;
   display: flex;
@@ -20,7 +19,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
     padding: 20px;
     margin-top: 10px;
 
@@ -32,27 +30,62 @@
       align-items: center;
       justify-content: space-around;
       margin: 10px;
+      margin-bottom: 50px;
     }
 
     .singleOption {
+      cursor: pointer;
       width: 46%;
       height: 50px;
-      padding: 15px 20px;
       margin: 10px;
-      box-shadow: 0 0 2px black;
+      font-size: clamp(0.8rem, 1vw, 1.2rem);
     }
   }
 
   .questions_buttons {
     position: absolute;
     bottom: 0;
+    width: 200px;
+    height: 100px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quitBtn {
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #f6e3c5;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .nextBtn {
+    width: 100px;
+    height: 40px;
+    background-color: #4cacbc;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .hover {
+    margin-top: 50px;
+  }
+
+  .hover:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
   }
 }
 
 .select {
-  background-color: greenyellow;
+  background-color: #a0d995;
+  color: #000;
 }
 
 .wrong {
-  background-color: red;
+  background-color: #ff5d5d;
 }
