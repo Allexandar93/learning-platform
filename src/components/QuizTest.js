@@ -22,13 +22,17 @@ const QuizTest = ({ name, score, questions, setQuestions, setScore }) => {
     return options.sort(() => Math.random() - 0.5);
   };
 
+  const capitalizeFirstLowercaseRest = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  };
+
   return (
     <div className="quizTest">
-      <span>Welcome {name} </span>
+      <span>Welcome {capitalizeFirstLowercaseRest(name)} </span>
       {questions ? (
         <>
           <div className="quizInfo">
-            <span>{questions[currentQuestion].category}</span>
+            <span>Category: {questions[currentQuestion].category}</span>
             <span>Score : {score}</span>
           </div>
           <Questions

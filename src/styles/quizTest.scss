@@ -1,3 +1,21 @@
 .quizTest {
   background-color: aqua;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+
+  span {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    margin: 10px 0;
+  }
+
+  .quizInfo {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
