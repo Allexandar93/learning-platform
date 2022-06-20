@@ -30,7 +30,7 @@
       align-items: center;
       justify-content: space-around;
       margin: 10px;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
 
     .singleOption {
@@ -43,14 +43,7 @@
   }
 
   .questions_buttons {
-    position: absolute;
-    bottom: 0;
-    width: 200px;
-    height: 100px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
   }
 
   .quitBtn {
@@ -60,6 +53,10 @@
     background-color: #f6e3c5;
     border: none;
     border-radius: 3px;
+
+    &:hover {
+      background-color: #6cc4a1;
+    }
   }
 
   .nextBtn {
@@ -68,16 +65,14 @@
     background-color: #4cacbc;
     border: none;
     border-radius: 3px;
+    &:hover {
+      background-color: #6cc4a1;
+    }
   }
 
   .hover {
-    margin-top: 50px;
-  }
-
-  .hover:hover {
     cursor: pointer;
     transition: 0.3s;
-    transform: scale(1.1);
   }
 }
 

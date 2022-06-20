@@ -1,15 +1,19 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/quizResults.scss";
 
 const QuizResults = ({ name, score }) => {
-  useEffect(() => {
-    if (!name) {
-    }
-  }, []);
-
+  const capitalizeFirstLowercaseRest = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  };
   return (
-    <div>
-      {name}
-      {score}
+    <div className="quizResults">
+      <p>
+        {capitalizeFirstLowercaseRest(name)}, your score is {score} / 10
+      </p>
+      <Link className="homeBtn" to={"/student"}>
+        Go Home
+      </Link>
     </div>
   );
 };

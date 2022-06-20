@@ -48,8 +48,7 @@ const QuizTest = ({ name, score, questions, setQuestions, setScore }) => {
         </>
       ) : (
         <>
-          {" "}
-          <p>Loading</p>{" "}
+          <p>LOADING...</p>
         </>
       )}
     </div>
