@@ -21,6 +21,7 @@ const QuizResults = ({ name, score }) => {
   };
   return (
     <div className="quizResults">
+      <p className="finished">Quiz Finished</p>
       <p>
         {capitalizeFirstLowercaseRest(name)}, your score is {score} / 10
       </p>

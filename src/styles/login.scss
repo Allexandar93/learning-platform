@@ -15,10 +15,11 @@
     align-items: center;
     text-align: center;
     position: relative;
+    padding-bottom: 5px;
 
     p:nth-child(1) {
       font-family: "Bebas Neue", cursive;
-      font-size: clamp(2.5rem, 4vw, 8rem);
+      font-size: clamp(2rem, 4vw, 8rem);
     }
 
     p:nth-child(2) {
