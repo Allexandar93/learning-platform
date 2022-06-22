@@ -7,6 +7,8 @@ import "./App.css";
 import Quiz from "./components/Quiz";
 import QuizTest from "./components/QuizTest";
 import QuizResults from "./components/QuizResults";
+import LoginTeacher from "./components/Teacher/LoginTeacher";
+import WelcomeTeacher from "./components/Teacher/WelcomeTeacher";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         </Route>
         <Route path="/student/profile" element={<Profile />} />
       </Route>
+      <Route path="/teacher" element={<LoginTeacher />} />
+      <Route path="/teacherwelcome" element={<WelcomeTeacher />} />
     </Routes>
   );
 }

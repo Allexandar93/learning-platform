@@ -16,7 +16,7 @@ const Welcome = () => {
           student{" "}
         </Link>{" "}
         or a{" "}
-        <Link className="welcome_loginbtn" to={"/login"}>
+        <Link className="welcome_loginbtn" to={"/teacher"}>
           {" "}
           teacher{" "}
         </Link>

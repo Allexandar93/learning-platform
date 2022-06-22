@@ -1,0 +1,89 @@
+.loginTeacher {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-bottom: 5px;
+
+  p:nth-child(1) {
+    font-family: "Bebas Neue", cursive;
+    font-size: clamp(2rem, 4vw, 8rem);
+  }
+
+  p:nth-child(2) {
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(1rem, 1.2vw, 4rem);
+  }
+  .or {
+    font-size: 0.8rem;
+  }
+
+  .login_icons {
+    margin-top: 10px;
+
+    .login_icons_img {
+      width: 40px;
+    }
+  }
+
+  .login_leftForm {
+    height: 100px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px auto;
+
+    .login_leftFormInput {
+      height: 40px;
+      padding: 0 10px;
+      border: none;
+      border-radius: 15px;
+      background-color: #cceee0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .login_leftBtn {
+    height: 40px;
+    width: 100%;
+    max-width: 150px;
+    background-color: #6cc4a1;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .login_leftNoEnter {
+    background-color: #6cc4a1;
+    height: 70px;
+    width: 80%;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 15px;
+
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: clamp(1rem, 1.8vw, 2rem);
+      color: rgb(0, 0, 0);
+    }
+  }
+}

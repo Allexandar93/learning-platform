@@ -14,9 +14,17 @@ const useUsername = () => {
     }
   };
 
+  const onTeacherSubmit = () => {
+    if (username) {
+      history("/teacherwelcome");
+    } else if (!username) {
+      setActive(true);
+    }
+  };
+
   localStorage.setItem("name", JSON.stringify(username));
 
-  return { username, setUsername, onSubmit, isActive };
+  return { username, setUsername, onSubmit, isActive, onTeacherSubmit };
 };
 
 export default useUsername;
