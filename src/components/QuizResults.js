@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/quizResults.scss";
 
 const QuizResults = ({ name, score }) => {
   const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+  let history = useNavigate();
 
   const highScore = {
     name: { name },
@@ -18,6 +20,7 @@ const QuizResults = ({ name, score }) => {
     highScores.unshift(highScore);
     localStorage.setItem("highScores", JSON.stringify(highScores));
     highScores.splice(9);
+    history("/student");
   };
   return (
     <div className="quizResults">

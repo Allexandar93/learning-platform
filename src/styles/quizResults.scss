@@ -35,6 +35,7 @@
       transition: 0.3s;
 
       &:hover {
+        cursor: pointer;
         background-color: #6cc4a1;
         transform: scale(1.1);
         transition: 0.3s;
